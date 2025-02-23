@@ -22,7 +22,20 @@ The **Wardrobe AR** app enhances image recognition capabilities within iOS appli
 - **Language:** Swift  
 - **Frameworks:** UIKit, CoreML, Vision  
 - **Machine Learning:** Custom CoreML Model  
-- **UI Components:** Auto Layout, Table Views, Image Views  
+
+---
+
+## **Dataset**  
+
+The clothing detection model is trained using the **[Clothes Detection Dataset](https://universe.roboflow.com/thibauts-headquarters/clothes-detection-1kl0o)** from **Roboflow Universe**. This dataset contains labeled images of various clothing items, enabling the model to recognize and classify garments with high accuracy.  
+
+### **Dataset Details:**  
+- **Source:** Roboflow Universe  
+- **Categories:** Multiple clothing types (e.g., shirts, pants, dresses, shoes)  
+- **Annotations:** Bounding boxes for object localization  
+- **Use Case:** Trained for object detection in real-world images  
+
+The dataset was preprocessed and converted into a **CoreML-compatible format** for efficient on-device inference.  
 
 ---
 
@@ -37,10 +50,10 @@ The **Wardrobe AR** app enhances image recognition capabilities within iOS appli
 
 ## **Future Enhancements**  
 
-🚀 **Upgrade to an advanced deep learning model** for improved detection accuracy.  
-🎥 **Support real-time video analysis** for continuous recognition.  
-🎨 **Enhance UI design** for a more interactive and modern experience.  
-📈 **Expand the dataset** for better generalization across diverse clothing types.  
+ **Upgrade to an advanced deep learning model** for improved detection accuracy.  
+ **Support real-time video analysis** for continuous recognition.  
+ **Enhance UI design** for a more interactive and modern experience.  
+ **Expand the dataset** for better generalization across diverse clothing types.  
 
 ---
 
@@ -54,11 +67,11 @@ The **Wardrobe AR** app enhances image recognition capabilities within iOS appli
 
 ---
 
-### **Installation & Setup**  
+## **Installation & Setup**  
 
 Clone the repository and open the project in **Xcode**:  
 
 ```bash
-git clone https://github.com/yourusername/Wardrobe-AR-iOS-App.git
+git clone https://github.com/programmerwali/Wardrobe-AR-iOS-App.git
 cd Wardrobe-AR-iOS-App
 open WardrobeAR.xcodeproj
