@@ -14,7 +14,6 @@ The Clothing Detection iOS App is designed to enhance image recognition capabili
 - **Language:** Swift  
 - **Frameworks:** UIKit, CoreML, Vision  
 - **Machine Learning:** Custom CoreML Model  
-- **UI Components:** Auto Layout, Table Views, Image Views  
 
 ## **Usage**
 1. **Import an image** from the gallery or capture one using the camera.  
