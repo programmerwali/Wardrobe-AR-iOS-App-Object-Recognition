@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7Z-Jh-GLv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="clothesObjectWithUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwD-JA-lQu">
+                                <rect key="frame" x="161" y="391" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.070588235289999995" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="lU7-4k-QZY"/>
+                                    <constraint firstAttribute="width" constant="70" id="tFZ-IA-wig"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Scan Photo"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilC-ay-OPJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap, Analyze, Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEV-80-7p1">
+                                <rect key="frame" x="71" y="252" width="250" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.7843137255" green="0.070588235289999995" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover your style with Wardrobe AR. Capture or upload photos to analyze and get style recommendations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-KM-TPE">
+                                <rect key="frame" x="35" y="301" width="322" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGk-N2-p0C">
+                                <rect key="frame" x="58" y="517.66666666666663" width="277" height="42.333333333333371"/>
+                                <color key="tintColor" red="0.7843137255" green="0.070588235289999995" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Upload from gallery"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEK-Ai-JtW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sGk-N2-p0C" secondAttribute="bottom" constant="209" id="0fQ-v6-u7t"/>
+                            <constraint firstItem="eEV-80-7p1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="5Lq-3f-71N"/>
+                            <constraint firstItem="cwu-KM-TPE" firstAttribute="top" secondItem="eEV-80-7p1" secondAttribute="bottom" constant="18" id="8xW-Yv-Ruu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JwD-JA-lQu" secondAttribute="trailing" constant="162" id="D2c-fB-ObQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eEV-80-7p1" secondAttribute="trailing" constant="72" id="Vxv-Re-dSR"/>
+                            <constraint firstItem="JwD-JA-lQu" firstAttribute="top" secondItem="cwu-KM-TPE" secondAttribute="bottom" constant="34" id="Xgh-1G-GIA"/>
+                            <constraint firstItem="sGk-N2-p0C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Y04-uG-Sqn"/>
+                            <constraint firstItem="eEV-80-7p1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="YJZ-Hc-0xt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cwu-KM-TPE" secondAttribute="trailing" constant="36" id="ddD-cY-PPR"/>
+                            <constraint firstItem="cwu-KM-TPE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="eIc-GB-j4W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGk-N2-p0C" secondAttribute="trailing" constant="58" id="lg6-Mw-RJ4"/>
+                            <constraint firstItem="JwD-JA-lQu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="poT-ga-CPH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="tshirt" catalog="system" id="tC0-Og-iGz">
+                        <color key="badgeColor" systemColor="systemPinkColor"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="qbL-rm-Gd1"/>
+                    <connections>
+                        <segue destination="aZh-IO-V8t" kind="show" identifier="showOpenImage" id="6fl-re-1E3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356.48854961832058" y="1061.9718309859156"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="RQ5-Qn-YEx">
+            <objects>
+                <viewController storyboardIdentifier="TrendingViewController" id="C3N-X6-NTX" customClass="TrendingViewController" customModule="clothesObjectWithUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEd-cp-dXT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3rk-Tg-1d1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trending" selectedImage="chart.line.uptrend.xyaxis" catalog="system" id="DE4-CJ-miR">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzq-Xn-Apb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="1113"/>
+        </scene>
+        <!--Open Image View Controller-->
+        <scene sceneID="bMn-oo-KZU">
+            <objects>
+                <viewController id="aZh-IO-V8t" customClass="OpenImageViewController" customModule="clothesObjectWithUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRb-Cj-vAL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mcv-FR-n8A">
+                                <rect key="frame" x="0.0" y="103" width="393" height="391"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2e-Aa-cPI">
+                                <rect key="frame" x="16" y="517" width="361" height="301"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fgP-PZ-Q5v"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.098039215686274508" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fgP-PZ-Q5v" firstAttribute="bottom" secondItem="Mcv-FR-n8A" secondAttribute="bottom" constant="324" id="5kv-Vi-Vxi"/>
+                            <constraint firstItem="Mcv-FR-n8A" firstAttribute="top" secondItem="fgP-PZ-Q5v" secondAttribute="top" id="8wc-t7-bK9"/>
+                            <constraint firstItem="Mcv-FR-n8A" firstAttribute="trailing" secondItem="fgP-PZ-Q5v" secondAttribute="trailing" id="Bkx-00-FZd"/>
+                            <constraint firstItem="U2e-Aa-cPI" firstAttribute="leading" secondItem="fgP-PZ-Q5v" secondAttribute="leading" constant="16" id="D9t-Wp-2oU"/>
+                            <constraint firstItem="U2e-Aa-cPI" firstAttribute="bottom" secondItem="fgP-PZ-Q5v" secondAttribute="bottom" id="FDY-3I-28x"/>
+                            <constraint firstItem="Mcv-FR-n8A" firstAttribute="leading" secondItem="fgP-PZ-Q5v" secondAttribute="leading" id="RzZ-m3-d8A"/>
+                            <constraint firstItem="U2e-Aa-cPI" firstAttribute="top" secondItem="Mcv-FR-n8A" secondAttribute="bottom" constant="23" id="cp8-Ho-ncY"/>
+                            <constraint firstItem="fgP-PZ-Q5v" firstAttribute="trailing" secondItem="U2e-Aa-cPI" secondAttribute="trailing" constant="16" id="eCR-kv-us2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="twh-rw-hSb"/>
+                    <connections>
+                        <outlet property="imageViewer" destination="Mcv-FR-n8A" id="uWX-9V-HI9"/>
+                        <outlet property="resultLabel" destination="U2e-Aa-cPI" id="CGP-Rz-wkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hwc-Bg-dLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356.48854961832058" y="1804.9295774647887"/>
+        </scene>
+        <!--Custom Camera View Controller-->
+        <scene sceneID="YkN-B7-lGY">
+            <objects>
+                <viewController id="Men-pe-s43" customClass="CustomCameraViewController" customModule="clothesObjectWithUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lxz-fM-WZf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gih-uC-1j0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9q-hc-QEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="2163"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4vb-L6-qVm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jke-Rx-GI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7Z-Jh-GLv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ny-Pf-yWY">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xt0-vE-Q0X" kind="relationship" relationship="rootViewController" id="xMr-X5-1Hx"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-190" y="77"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Tk-c0-Lgg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hA-tf-gND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xt0-vE-Q0X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="roh-j2-fW6"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LMQ-US-2bD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <color key="barTintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5VU-T7-kB9"/>
+                        <segue destination="C3N-X6-NTX" kind="relationship" relationship="viewControllers" id="DRF-tR-fZg"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="979" y="260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="chart.line.uptrend.xyaxis" catalog="system" width="128" height="102"/>
+        <image name="tshirt" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
