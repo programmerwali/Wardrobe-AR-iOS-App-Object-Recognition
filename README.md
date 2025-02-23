@@ -1,4 +1,4 @@
-# Wardrobe-AR---iOS-App-Object-Recognition
+# Wardrobe-AR-iOS-App-Object-Recognition
 
 The Clothing Detection iOS App is designed to enhance image recognition capabilities within mobile applications. It employs a CoreML model for detecting and classifying clothing items in images. Users can select an image from their gallery or capture a new one to analyze. The app highlights detected clothing items with bounding boxes and displays relevant details such as confidence scores, inference time, and model information.
 
