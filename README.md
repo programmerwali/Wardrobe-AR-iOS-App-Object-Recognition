@@ -26,3 +26,6 @@ The Clothing Detection iOS App is designed to enhance image recognition capabili
 - **Support for real-time video analysis.**  
 - **Enhancement of the UI** for a more interactive experience.  
 - **Expansion of the dataset** for better model generalization.  
+
+
+![App Screenshot](WardrobeAR_img1.png)
